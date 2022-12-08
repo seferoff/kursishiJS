@@ -35,6 +35,7 @@ addButton.addEventListener("click", () => {
   inputElem = document.querySelectorAll(".inp");
   for (let i = 0; i < inputElem.length; i++) {
     mainArr[i] = inputElem[i].value;
+    inputElem[i].style.backgroundColor = "lightcyan"
   }
 });
 
