@@ -33,7 +33,7 @@ plusButton.addEventListener("click", addList);
 
 addButton.addEventListener("click", () => {
   inputElem = document.querySelectorAll(".inp");
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < inputElem.length; i++) {
     mainArr[i] = inputElem[i].value;
   }
 });
