@@ -34,7 +34,6 @@ plusButton.addEventListener("click", addList);
 addButton.addEventListener("click", () => {
   inputElem = document.querySelectorAll(".inp");
   for (let i = 0; i < inputElem.length; i++) {
-    mainArr[i] = inputElem[i].value;
     inputElem[i].style.backgroundColor = "lightcyan"
   }
 });
@@ -48,6 +47,11 @@ document.addEventListener("click", (e) => {
 icon1.addEventListener("click", (event) => {
   event.target.style.display = "none";
   icon2.style.display = "block";
+  inputElem = document.querySelectorAll (".inp")
+
+  for (let i=0; i<inputElem.length; i++) {
+    mainArr[i] = inputElem[i].value
+  };
 
   function getInputValue() {
     let arr = [];
