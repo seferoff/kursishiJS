@@ -60,7 +60,6 @@
 .inp {
     width: 230px;
     height: 36px;
-    border: 0 none white;
     font-size: 20px;
     font-weight: 500;
     padding: 2px 27px;
@@ -80,7 +79,7 @@
     background-color: white;
 }
 
-.dlt:hover {
+.delete:hover {
     color: white;
     background-color: #833AE0;
 }

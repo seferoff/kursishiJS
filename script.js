@@ -34,7 +34,7 @@ plusButton.addEventListener("click", addList);
 addButton.addEventListener("click", () => {
   inputElem = document.querySelectorAll(".inp");
   for (let i = 0; i < inputElem.length; i++) {
-    inputElem[i].style.backgroundColor = "lightcyan"
+    inputElem[i].style.backgroundColor = "lightcyan";
   }
 });
 
@@ -47,11 +47,11 @@ document.addEventListener("click", (e) => {
 icon1.addEventListener("click", (event) => {
   event.target.style.display = "none";
   icon2.style.display = "block";
-  inputElem = document.querySelectorAll (".inp")
+  inputElem = document.querySelectorAll(".inp");
 
-  for (let i=0; i<inputElem.length; i++) {
-    mainArr[i] = inputElem[i].value
-  };
+  for (let i = 0; i < inputElem.length; i++) {
+    mainArr[i] = inputElem[i].value;
+  }
 
   function getInputValue() {
     let arr = [];
@@ -68,6 +68,10 @@ icon1.addEventListener("click", (event) => {
         return 1;
       }
       return 0;
+    });
+
+    arr.sort(function (a, b) {
+      return a - b;
     });
 
     for (let i = 0; i < arr.length; i++) {
@@ -97,6 +101,10 @@ icon2.addEventListener("click", (event) => {
         return 11;
       }
       return 0;
+    });
+
+    arr.sort(function (a, b) {
+      return b - a;
     });
 
     for (let i = 0; i < arr.length; i++) {
